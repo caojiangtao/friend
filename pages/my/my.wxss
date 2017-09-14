@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: #f6f8f9;
+  padding:40rpx 0;
+}
+.userinfo-avatar{
+  width:140rpx;
+  height:140rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.nav-list{
+  margin-bottom: 20rpx;
+  padding:40rpx;
+  font-size: 30rpx;
+  line-height: 48rpx;
+  background: #fff;
+  box-shadow:  4rpx 4rpx 2rpx rgba(000, 000, 000, 0.2);
+}

@@ -1,0 +1,35 @@
+{
+  "pages":[
+   
+    "pages/index/index",
+    "pages/my/my",
+    "pages/set/set",
+    "pages/datacard/datacard",
+    "pages/card/card",
+    "pages/talk/talk"
+  ],
+  "window":{
+    "backgroundColor": "black",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "geek",
+    "navigationBarTextStyle":"black"
+
+  },
+    "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/my/my",
+          "text": "我"
+        }
+      ]
+    },"networkTimeout": {
+      "request": 10000,
+      "downloadFile": 10000
+    },
+    "debug": true
+}

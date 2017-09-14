@@ -1,0 +1,20 @@
+
+<view class="container">
+
+      <block wx:for="{{array}}" wx:key="id">
+          <view class="card-box ca-{{index}} {{choose == index ?'on':'off'}}" bindtap="tapName" data-type="{{index}}">
+            <icon type="cancel" size="20" color="green" class='cancel' catchtap="cancel"/>
+            <view class="card-one {{choose == index ?'on':'off'}}" >
+                  <image class="userImg" src="{{item.avatarUrl[0]}}"></image>
+                  <view class='userinformation username'>{{item.userInfo.nickName}}</view>
+                  <view class='userinformation'>年龄: {{item.age}}</view>
+                   <view class='userinformation'>性别: {{item.gender ==1?"男":"女"}}</view>
+                  <view class='userinformation hobby'>爱好: {{item.inforSelf}}</view>
+                   <navigator url="/pages/card/card?id={{item.objectId}}" hover-class="navigator-hover" class='gotosee'><view >去看{{item.gender ==1?"他":"她"}}...</view> </navigator>
+             </view>
+            <view class="card-tow {{choose == index ?'on2':'off'}}">
+            </view>
+          </view>
+        </block>
+</view>
+

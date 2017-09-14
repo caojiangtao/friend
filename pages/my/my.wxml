@@ -1,0 +1,13 @@
+
+<view class="container">
+    <view class='nav-list'>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode='scaleToFill'></image>
+        <view>{{userInfo.nickName}}</view>
+        <view>年龄:{{userInfo.gender}}</view>
+         <view>城市:{{userInfo.province}}.{{userInfo.city}}</view>
+    </view>
+     <view class='nav-list'> <navigator url="/pages/set/set" hover-class="navigator-hover">设置</navigator></view>
+     <navigator url="/pages/datacard/datacard" hover-class="navigator-hover"><view class='nav-list'> 资料</view></navigator>
+     <view class='nav-list'>历史记录</view>
+      <view class='nav-list'>反馈</view>
+</view>

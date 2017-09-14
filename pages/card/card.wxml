@@ -1,0 +1,15 @@
+<view class="container">
+
+    <view class="my-photo">
+       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" />
+     </view>
+ <view class='name'  >{{userInfo.userInfo.nickName}}</view>
+ <view class='telephone'  >性别: {{userInfo.gender>1 ? "女":"男"}}</view>
+   <view class='telephone'  >年龄: {{userInfo.age}}</view>
+   <view class='telephone'  >联系方式: {{userInfo.phone}}</view>
+  <view class='introduction'  >爱好: {{userInfo.inforSelf}}</view>
+  <view class='introduction'  >简介: {{userInfo.introduce}}</view>
+
+  <navigator url="/pages/talk/talk?id={{userInfo.objectId}}" hover-class="navigator-hover"> <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+         form-type='submit' class='tijiao'>发消息给TA </button> </navigator>
+</view>

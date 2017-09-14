@@ -1,0 +1,15 @@
+<view class="container">
+
+    <view class="my-photo">
+       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" />
+     </view>
+ <view class='name'  >{{userInfo.nickName}}</view>
+ <view class='telephone'  >性别: {{userInfo.gender>1 ? "女":"男"}}</view>
+   <view class='telephone'  >年龄: {{age}}</view>
+   <view class='telephone'  >联系方式: {{phone}}</view>
+  <view class='introduction'  >爱好: {{inform}}</view>
+  <view class='introduction'  >简介: {{introduce}}</view>
+
+  <!-- <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+         form-type='submit' class='tijiao'> 提交 </button> -->
+</view>

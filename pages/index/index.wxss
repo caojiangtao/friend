@@ -1,0 +1,380 @@
+/**index.wxss**
+
+
+.image-card{
+  box-sizing: border-box;
+  width:32%;
+  margin: 0;
+  padding: 0;
+  display:inline-table;
+  overflow: hidden;
+  border-bottom:1px solid #353535;
+  border-right:1px solid #353535;
+  overflow: hidden;
+  text-align: center;
+  
+ 
+
+}
+
+.userinfo-avatar{
+  width: 100%;
+  display: block;
+  height: 240rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  width: 100%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.card-box{
+  width:100rpx;
+  height:200rpx;
+  position: fixed;
+  top: 40%;
+  transform:rotate(-15deg);
+  padding: 20rpx 10rpx;
+ margin-left: 50rpx;
+
+
+}
+.card-one{
+  
+  	transform-style: preserve-3d;
+    	backface-visibility: hidden;
+  position: absolute;
+   width:80rpx;
+  height:180rpx;
+  background:#ccc;
+  transform: rotateY( -180deg);
+   animation:first 3s linear infinite alternate;
+  z-index: 2; border-radius: 10rpx;
+ overflow: hidden;
+}
+.card-tow{
+
+  	transform-style: preserve-3d;
+    backface-visibility: hidden;
+   width:80rpx;
+  height:180rpx;
+  background:red;
+  transform: rotateY( 0deg);
+ animation:second 3s linear  infinite alternate;
+  z-index: 3; border-radius: 10rpx;
+ overflow: hidden;
+}
+
+@keyframes first
+{
+from {transform:rotateY( -180deg);}
+to {transform:rotateY( 0deg);}
+}
+
+@keyframes second
+{
+from {transform:rotateY( 0deg);}
+to {transform:rotateY( 180deg);}
+}
+
+
+.ask{
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 200rpx;
+  width: 100%;
+}
+button[type="primary"] {
+  margin:0rpx 80rpx;
+  position: absolute;
+  bottom:50rpx;
+  background: #576b95;
+  font-size: 40rpx;
+  width:300rpx;
+  left:50%;
+  margin-left: -150rpx;
+
+}*/
+
+/**index.wxss**/
+/* .container{
+  width:100%;
+  padding: 0px 2.2%;
+   background: url("http://ohcm6uzn6.bkt.clouddn.com/bc.png") no-repeat 0 0; 
+  
+} */
+/* .container{
+  width:100%;
+  padding: 0px 2.2%;
+   background: url("http://ohcm6uzn6.bkt.clouddn.com/bc.png") no-repeat; 
+} */
+
+.card-box{
+  display: block;
+  width:300rpx;
+  height:400rpx;
+  background: #fff;
+  
+  position: fixed;
+  left:50%;
+  top:20%;
+  margin-left: -160rpx;
+  border-radius: 10rpx;
+
+}
+.card-box:nth-child(1){
+  z-index: 1;
+}
+.card-box:nth-child(2){
+  z-index: 2;
+}
+.card-box:nth-child(3){
+  z-index: 3;
+}
+.card-box:nth-child(4){
+  z-index: 4;
+}
+.card-box:nth-child(5){
+  z-index: 5;
+}
+.card-box:nth-child(6){
+  z-index: 6;
+}
+.card-box:nth-child(7){
+  z-index: 7;
+}
+.card-box:nth-child(8){
+  z-index: 8;
+}
+.card-box:nth-child(9){
+  z-index: 9;
+}
+.card-box:nth-child(10){
+  z-index: 10;
+}
+
+.card-one{
+
+  	transform-style: preserve-3d;
+    	backface-visibility: hidden;
+  position: absolute;
+   width:300rpx;
+  height:400rpx;
+  background:#fff;
+  transform: rotateY( -180deg);
+   animation:first 3s linear infinite alternate;
+  z-index: 2; border-radius: 10rpx;
+ overflow: hidden;
+
+ box-shadow:  inset 0 0 0 1px rgba(0,0,0,0.08);
+}
+.card-tow{
+ 
+    background: url("http://obdubbgj2.bkt.clouddn.com/qqq.png") no-repeat center center;
+   background-size: 100% auto;
+  	transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow:  inset 0 0 0 1px rgba(0,0,0,0.08);
+  width:300rpx;
+  height:400rpx;
+  transform: rotateY( 0deg);
+ animation:second 3s linear  infinite alternate;
+  z-index: 3; border-radius: 10rpx;
+ overflow: hidden;
+   box-shadow:  inset 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+
+.ca-0{
+   animation:c-one 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+     transform:rotate(-45deg);
+}
+.ca-1{
+ animation:c-tow 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+     transform:rotate(-35deg);
+}
+
+.ca-2{
+   animation:c-three 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+      transform:rotate(-25deg);
+}
+.ca-3{
+   animation:c-four 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+      transform:rotate(-15deg);
+}
+.ca-4{
+   animation:c-five 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+      transform:rotate(-5deg);
+}
+.ca-5{
+ animation:c-six 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+      transform:rotate(5deg);
+}
+.ca-6{
+  animation:c-seven 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+      transform:rotate(15deg);
+}
+.ca-7{
+  animation:c-eight 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+      transform:rotate(25deg);
+}
+.ca-8{
+ animation:c-nine 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+      transform:rotate(35deg);
+}
+.ca-9{
+  animation:c-ten 2s linear  1 normal;
+     transform-origin: 25% 100% 0px;
+      transform:rotate(45deg);
+}
+
+
+@keyframes c-one
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( -45deg)}
+}
+@keyframes c-tow
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( -35deg)}
+}
+@keyframes c-three
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( -25deg)}
+}
+@keyframes c-four
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( -15deg)}
+}
+@keyframes c-five
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( -5deg)}
+}
+@keyframes c-six
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( 5deg)}
+}
+@keyframes c-seven
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( 15deg)}
+}
+@keyframes c-eight
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( 25deg)}
+}
+@keyframes c-nine
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( 35deg)}
+}
+@keyframes c-ten
+{
+from { transform:rotate(0deg)}
+
+to {transform:rotate( 45deg)}
+}
+
+.testok{ background: red; width:400px;height:400px;}
+.on{
+  /* animation:c-high 1s linear  1 normal; */
+  transform:rotate( 0deg);
+  width:300rpx;
+  height:400rpx;
+  z-index: 50!important;
+  transition:All 0.4s ease-in-out;
+  transform:scale(1.2,1.2);
+}
+
+.on2{
+  /* animation:c-high 1s linear  1 normal; */
+  transform:rotate( 180deg);
+  width:300rpx;
+  height:400rpx;
+  z-index: 50!important;
+  transition:All 0.4s ease-in-out;
+  transform:scale(1.2,1.2);
+}
+@keyframes c-scale{
+  form {  transform:scale(1,1);}
+  to{
+      transform:scale(1.2,1.2);
+  }
+}
+@keyframes c-high
+{
+from {top:20%}
+to {top:10%;transform:rotate( 0deg);
+transform:scale(1.2,1.2);
+z-index: 50!important;
+}
+}
+
+.userImg{height:80px;width: 100%;}
+.userinformation{
+  font-size: 20rpx;
+  color: #888888;
+  padding:5rpx 30rpx;
+}
+.username{ text-align: center;}
+.cancel{
+  position: absolute;
+  right:-30rpx;
+  top:-40rpx;
+  z-index: 200!important;
+  background: #fff;
+  border-radius: 50%;
+  display: none;
+}
+.on .cancel{
+  display: block;
+}
+
+.hobby{
+  overflow: hidden;
+  height:24rpx;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.gotosee{
+  font-size: 24rpx;
+  text-align: center;
+  padding:10rpx;
+  color: #fff;
+  background: #09bb07;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
