@@ -41,19 +41,19 @@ Page({
      var she = this.data.she;
      console.log(she);
      //var she = "59ba5ef7a0bb9f0064bc388c"
-    var _text = e.detail.value.talk+": 我";
-    createlink(app.globalData.userInfo.objectId).then(my=> {
+    var _text = e.detail.value.talk;
+    createlink(app.globalData.userInfo.nickName).then(my=> {
       // 创建与Jerry之间的对话
       console.log("ok");
       return my.createConversation({
         members: [she],
-        name: app.globalData.userInfo.nickName,
+        name: app.globalData.userInfo.nickName + "&" + this.data.sheInfo.nickName,
       });
     }).then(conversation=> {
       // 发送消息   
       return conversation.send(new TextMessage(_text));
     }).then(message=> {
-      this.data.alltalk.push(_text);
+      this.data.alltalk.push(_text+" :我说");
       this.setData({
         message: this.data.alltalk
       })
