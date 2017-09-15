@@ -9,6 +9,7 @@ AV.init({
 const realtime = new Realtime({
   appId: 'GyO0UevjvEs795DCPmK1KkAe-gzGzoHsz',
   noBinary: true,
+  pushOfflineMessages: true
 });
 App({
   onLaunch: function () {

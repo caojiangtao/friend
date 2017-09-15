@@ -20,10 +20,10 @@ Page({
           var _gender = res.userInfo.gender;
       
           if (_gender === 0) {
-            this.getUseList(0)
+            this.getUseList(1)
           }
           if (_gender === 1) {
-            this.getUseList(2)
+            this.getUseList(1)
           }
           if (_gender === 2) {
             this.getUseList(1)

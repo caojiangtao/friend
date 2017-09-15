@@ -51,7 +51,8 @@ Page({
         // // 修改属性
         todo.set('userId', app.globalData.userInfo.objectId);
         todo.set('inforSelf', _textarea);
-        todo.set('userInfo', app.globalData.userInfo)
+        todo.set('userInfo', app.globalData.userInfo);
+        todo.set('gender', app.globalData.userInfo.gender);
         todo.set('phone', _input);
         todo.set('age', _age);
         todo.set('avatarUrl', avatarUrl);
