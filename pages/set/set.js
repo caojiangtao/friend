@@ -52,7 +52,6 @@ Page({
         todo.set('userId', app.globalData.userInfo.objectId);
         todo.set('inforSelf', _textarea);
         todo.set('userInfo', app.globalData.userInfo);
-        todo.set('gender', app.globalData.userInfo.gender);
         todo.set('phone', _input);
         todo.set('age', _age);
         todo.set('avatarUrl', avatarUrl);
@@ -73,7 +72,8 @@ Page({
         // todo.set('userId', app.globalData.userInfo.objectId);
         todo.set('inforSelf', _textarea);
         todo.set('age', _age);
-        todo.set('userInfo', app.globalData.userInfo)
+        todo.set('userInfo', app.globalData.userInfo);
+        todo.set('gender', app.globalData.userInfo.gender);
         todo.set('phone', _input);
         todo.set('introduce', _introduce);
         todo.set('avatarUrl', avatarUrl);
