@@ -49,7 +49,7 @@ Page({
       success: function (res) {      
         var todo = AV.Object.createWithoutData('userInformation', res.data);
         // // 修改属性
-        // todo.set('userId', app.globalData.userInfo.objectId);
+        todo.set('userId', app.globalData.userInfo.objectId);
         todo.set('inforSelf', _textarea);
         todo.set('userInfo', app.globalData.userInfo)
         todo.set('phone', _input);

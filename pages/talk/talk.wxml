@@ -1,1 +1,13 @@
-<view>sdf</view>
+<view class="container">
+  <scroll-view scroll-y="true" class="talkbox">
+  <view wx:for="{{message}}" class='talk-list' wx:key="{{index}}">
+    {{item}}
+  </view>
+</scroll-view>
+<view class='bottombox'>
+  <form bindsubmit='message'>
+<input placeholder="说点什么" auto-focus class='talk-text' name="talk"/>
+<button size="mini" type='warn' class='send-message' form-type='submit'>发送</button>
+</form>
+</view>
+</view>

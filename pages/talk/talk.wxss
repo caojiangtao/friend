@@ -1,0 +1,43 @@
+.talk-text{
+  border:1rpx solid silver;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  height: 80rpx;width: 80%;
+  border-radius: 5rpx;
+  padding:0px 10rpx;
+  float: left;
+  background: #fff;
+  box-sizing: border-box;
+}
+.talkbox{
+  border-top:1rpx solid #1AAD19;
+  padding: 30rpx;
+  height:80%;
+  background-color: #fdfdf7;
+  box-sizing: border-box;
+
+}
+.bottombox{
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  width:100%;
+  padding:20rpx;
+  background-color: #1AAD19;
+  overflow: hidden;
+}
+
+.send-message{
+  height:82rpx;
+  border-radius: 0;
+  line-height: 82rpx!important;
+  float: left;
+}
+
+.talk-list{
+  display: block;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  color: #000;
+  text-align: right;
+}
