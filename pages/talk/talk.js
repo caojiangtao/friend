@@ -21,7 +21,7 @@ Page({
       });
       wx.setNavigationBarTitle({ title: _do.userInfo.nickName });
 
-      createlink.then(myself => {
+      createlink(app.globalData.userInfo.objectId).then(myself => {
       console.log(myself);
       var _this = this;
       myself.on('message', function (message, conversation) {
